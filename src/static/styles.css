@@ -127,9 +127,11 @@ button:hover {
 }
 
 .info {
-  background-color: #d1ecf1;
+  background-color: transparent;
   color: #0c5460;
-  border: 1px solid #bee5eb;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hidden {
@@ -141,4 +143,61 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #37474f;
+}
+
+/* Bulleted list reset */
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Individual participant row */
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(250,250,250,0.6));
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #eef2f7;
+}
+
+/* Small circular avatar with initials */
+.avatar {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3949ab, #1a237e);
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  flex: 0 0 34px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Email text */
+.participant-email {
+  font-size: 14px;
+  color: #263238;
+  word-break: break-all;
 }
